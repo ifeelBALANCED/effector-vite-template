@@ -1,7 +1,5 @@
 # effector-vite-template
 Vite.js template with Effector and Typescript
-# esbuild-chakra
-Esbuild (React.js + TS + Chakra UI)
 
 # @vite/create-app
 
