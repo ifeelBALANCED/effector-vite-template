@@ -1,0 +1,35 @@
+.counter {
+    display: flex;
+    align-items: center;
+    color: #ff8c00;
+}
+
+.counter__label {
+    width: 70px;
+    font-size: 48px;
+}
+
+.counter__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: none;
+    padding: 0;
+    color: #ff8c00;
+    font-size: 32px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+
+.counter__button:focus {
+    border: 2px solid rgba(255, 140, 0, 0.4);
+}
+
+.counter__button:active {
+    background-color: rgba(255, 140, 0, 0.1);
+}

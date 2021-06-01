@@ -1,0 +1,27 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #000;
+    font-size: calc(10px + 2vmin);
+    text-align: center;
+    background-color: #fff;
+}
+
+.hero__logo {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.hero__link {
+    color: #ff8c00;
+}
+
+@media (prefers-color-scheme: dark) {
+    .hero {
+        color: #fff;
+        background-color: #282c34;
+    }
+}
