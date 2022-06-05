@@ -1,15 +1,25 @@
-import {defineConfig} from 'vite'
-import reactRefresh from '@vitejs/plugin-react-refresh'
-import {babel} from "@rollup/plugin-babel";
+import { fileURLToPath } from "url";
 
-// https://vitejs.dev/config/
+import { defineConfig } from 'vite';
+import reactJsx from 'vite-react-jsx';
+
+import legacy from "@vitejs/plugin-legacy";
+import reactRefresh from '@vitejs/plugin-react-refresh';
+
 export default defineConfig({
-    plugins: [
-        reactRefresh(),
-        babel({
-            include: ['./src/**'],
-            extensions: ['.ts', '.tsx'],
-            babelHelpers: 'bundled',
-        }),
-    ],
-})
+  plugins: [
+    legacy(),
+    reactRefresh(),
+    reactJsx(),
+  ],
+  esbuild: {
+    jsxFactory: '_jsx',
+    jsxFragment: '_jsxFragment',
+    jsxInject: `import { createElement as _jsx, Fragment as _jsxFragment } from 'react'`,
+  },
+  resolve: {
+    alias: {
+      "@": fileURLToPath(new URL("./src", import.meta.url)),
+    },
+  },
+});
