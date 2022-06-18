@@ -26,6 +26,9 @@
     "simple-import-sort"
   ],
   "settings": {
+    "react": {
+      "version": "detect"
+    },
     "import/resolver": {
       "node": {
         "extensions": [".js", ".jsx", ".ts", ".tsx"]
@@ -33,6 +36,7 @@
     }
   },
   "rules": {
+    "import/no-unresolved": "off",
     "no-use-before-define": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
@@ -42,6 +46,8 @@
     "eol-last": "off",
     "max-len": ["warn", { "code": 80 }],
     "import/extensions": ["error", "never", { "svg": "always" }],
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
     "prettier/prettier": [
       "error",
       {
