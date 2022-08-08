@@ -3,7 +3,7 @@ export interface IProps {
   onClick?: (color: string) => void;
 }
 
-const ColorButton = ({ color, onClick }: IProps) => (
+export const ColorButton = ({ color, onClick }: IProps) => (
   <button
     style={{ color }}
     onClick={() => onClick && onClick(color)}
@@ -12,5 +12,3 @@ const ColorButton = ({ color, onClick }: IProps) => (
     Color Button
   </button>
 );
-
-export default ColorButton;

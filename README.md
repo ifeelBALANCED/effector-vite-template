@@ -18,15 +18,21 @@ $ docker run -p 3000:80 your_container_id
 
 In the project directory, you can run:
 
-### `yarn dev`
+### `pnpm dev`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## You can also start dev server using Docker.
+```bash
+$  docker-compose up
+```
+Open [http://0.0.0.0:4200/](http://0.0.0.0:4200/) to view it.
+
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-### `yarn build`
+### `pnpm build`
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -34,7 +40,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-### `yarn serve`
+### `pnpm serve`
 
 Locally preview production build
 

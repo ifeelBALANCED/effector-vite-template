@@ -1,6 +1,5 @@
 import { storiesOf } from '@storybook/react';
-
-import ColorButton from './color-button';
+import { ColorButton } from '@/shared';
 
 storiesOf('ColorButton', module)
   .add('red', () => <ColorButton color="red" />)

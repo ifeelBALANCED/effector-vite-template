@@ -1,5 +1,5 @@
 #!/bin/sh
 
-yarn rebuild esbuild
+pnpm rebuild esbuild
 
 exec "$@"
